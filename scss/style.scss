@@ -1,22 +1,28 @@
-$cinza: #999;
-$cor1: #B57D10;
-$corletra: #e663db;
-$corfundo: #0a0a0a;
-$borda-padrao: 2px;
-$bordaradius-padrao: 10px;
+@import 'reset';
 
-body {
-  background-color: $cor1;
+@mixin girar($graus) {
+    transform:rotate($graus);
+    -webkit-transform:rotate($graus);
+    -moz-transform:rotate($graus);
+    -ms-transform:rotate($graus + 30deg);
 }
 
 
+$cinza: #999;
+$cor1: #B57D10;
+$corletra: #ffffff;
+$corfundo: #34abeb;
+$borda-padrao: 2px;
+$bordaradius-padrao: 10px;
+
+
 div {
-  background:$corfundo;
-  height: 200px;
-  width: 200px;
-  border: $borda-padrao;
-  border-radius: $bordaradius-padrao;
-  text-align: center;
+    background:$corfundo;
+    height: 50px;
+    width: 200px;
+    border: $borda-padrao;
+    border-radius: $bordaradius-padrao;
+    text-align: center;
   
   .texto {
     color: $corletra;
@@ -24,16 +30,18 @@ div {
 }
 
 nav {
-  background-color: #EEE;
-  height: 100px;
+    background-color: #EEE;
+    height: 100px;
 
   ul{ 
-    margin:0;
-    padding: 0;
-    list-style: none;
+      margin:0;
+      padding: 0;
+      list-style: none;
 
     li{
-      display: inline-block;
+        display: inline-block;
+        @include girar(90deg);
+  
       a{
         display: block;
         background-color: #CCC;
@@ -42,5 +50,80 @@ nav {
         color: #000;
       }
     }
+  }
+}
+
+%fundamento-msg {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #FFFF;
+    margin: auto;
+    margin-top: 10px;
+    width: 400px;
+    height: 50px;
+}
+
+.msg-info {
+    @extend %fundamento-msg;
+    border-color: #0000FF;
+    color: #0000FF;
+}
+
+.msg-aviso {
+    @extend %fundamento-msg;
+    border-color:#FF0000;
+    color: #FF0000;
+}
+
+.msg-sucesso{
+    @extend %fundamento-msg;
+    border-color:green;
+    color: green;
+}
+
+%item {
+    background-color: royalblue;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+$item-width: 100px;
+
+.item {
+    @extend %item;
+    width:$item-width;
+}
+
+.item-duplo {
+    @extend %item;
+    width:$item-width * 2;
+}
+
+.item-metade {
+  @extend %item;
+  width:$item-width / 2;
+}
+
+
+%item-padrao {
+    font-size: 14px;
+    border: 1px solid #333;
+    padding:5px;
+}
+%item-negrito {
+  font-weight: bold
+}
+
+@for $i from 1 through 10 {
+  .item-#{$i} {
+      @extend %item-padrao;
+
+      @if $i <=3 {
+        @extend %item-negrito;
+      }
+      @else {
+        font-weight: normal;
+        font-size: 12px;
+      }
   }
 }

@@ -1,10 +1,12 @@
 body {
-  background-color: #B57D10;
+  font-family: Arial;
+  font-size: 24px;
+  background-color: #999;
 }
 
 div {
-  background: #0a0a0a;
-  height: 200px;
+  background: #34abeb;
+  height: 50px;
   width: 200px;
   border: 2px;
   border-radius: 10px;
@@ -12,7 +14,7 @@ div {
 }
 
 div .texto {
-  color: #e663db;
+  color: #ffffff;
 }
 
 nav {
@@ -28,6 +30,10 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(120deg);
 }
 
 nav ul li a {
@@ -36,4 +42,92 @@ nav ul li a {
   padding: 10px;
   text-decoration: none;
   color: #000;
+}
+
+.msg-info, .msg-aviso, .msg-sucesso {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #FFFF;
+  margin: auto;
+  margin-top: 10px;
+  width: 400px;
+  height: 50px;
+}
+
+.msg-info {
+  border-color: #0000FF;
+  color: #0000FF;
+}
+
+.msg-aviso {
+  border-color: #FF0000;
+  color: #FF0000;
+}
+
+.msg-sucesso {
+  border-color: green;
+  color: green;
+}
+
+.item, .item-duplo, .item-metade {
+  background-color: royalblue;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.item {
+  width: 100px;
+}
+
+.item-duplo {
+  width: 200px;
+}
+
+.item-metade {
+  width: 50px;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10 {
+  font-size: 14px;
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+.item-1, .item-2, .item-3 {
+  font-weight: bold;
+}
+
+.item-4 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.item-5 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.item-6 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.item-7 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.item-8 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.item-9 {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.item-10 {
+  font-weight: normal;
+  font-size: 12px;
 }

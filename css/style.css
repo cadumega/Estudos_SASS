@@ -44,6 +44,10 @@ nav ul li a {
   color: #000;
 }
 
+nav ul li a:hover {
+  background-color: #B57D10;
+}
+
 .msg-info, .msg-aviso, .msg-sucesso {
   padding: 10px;
   font-size: 20px;

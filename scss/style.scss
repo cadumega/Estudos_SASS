@@ -33,6 +33,10 @@ nav {
     background-color: #EEE;
     height: 100px;
 
+    // &:hover {
+    //   background-color:#B57D10;
+    // }
+    
   ul{ 
       margin:0;
       padding: 0;
@@ -48,6 +52,10 @@ nav {
         padding: 10px;
         text-decoration: none;
         color: #000;
+
+        &:hover {
+          background-color:#B57D10;
+        }
       }
     }
   }
@@ -127,3 +135,4 @@ $item-width: 100px;
       }
   }
 }
+

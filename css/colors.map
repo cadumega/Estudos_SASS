@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "colors.css",
+	"sources": [
+		"../scss/colors.scss"
+	],
+	"sourcesContent": [
+		"p {\r\n  color: blueviolet;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACA,KAAK,EAAE,UAAU;CAClB"
+}

@@ -1,13 +1,39 @@
-@import "colors.css";
-
-div {
-  background: #999;
-  height: 200px;
-  width: 100px;
+body {
+  background-color: #B57D10;
 }
 
+div {
+  background: #0a0a0a;
+  height: 200px;
+  width: 200px;
+  border: 2px;
+  border-radius: 10px;
+  text-align: center;
+}
 
-a {
-    color: pink;
-    background: royalblue;
+div .texto {
+  color: #e663db;
+}
+
+nav {
+  background-color: #EEE;
+  height: 100px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  background-color: #CCC;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
 }

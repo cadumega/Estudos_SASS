@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"$preto: #999;\r\n\r\nbody {\r\n  background-color: royalblue;\r\n}\r\n\r\n\r\ndiv {\r\n  background: $preto;\r\n  height: 200px;\r\n  width: 100px;\r\n\r\n  a {\r\n    color: pink;\r\n    background: royalblue;\r\n  }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,SAAS;CAC5B;;;AAGD,AAAA,GAAG,CAAC;EACF,UAAU,EARJ,IAAI;EASV,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CAMb;;;AATD,AAKE,GALC,CAKD,CAAC,CAAC;EACA,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,SAAS;CACtB"
+}

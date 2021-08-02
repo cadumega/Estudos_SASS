@@ -1,12 +1,46 @@
-$preto: #999;
+$cinza: #999;
+$cor1: #B57D10;
+$corletra: #e663db;
+$corfundo: #0a0a0a;
+$borda-padrao: 2px;
+$bordaradius-padrao: 10px;
+
+body {
+  background-color: $cor1;
+}
+
 
 div {
-  background: $preto;
+  background:$corfundo;
   height: 200px;
-  width: 100px;
+  width: 200px;
+  border: $borda-padrao;
+  border-radius: $bordaradius-padrao;
+  text-align: center;
+  
+  .texto {
+    color: $corletra;
+  }
+}
 
-  a {
-    color: pink;
-    background: royalblue;
+nav {
+  background-color: #EEE;
+  height: 100px;
+
+  ul{ 
+    margin:0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        background-color: #CCC;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+      }
+    }
   }
 }
